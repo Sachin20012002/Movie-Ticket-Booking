@@ -35,11 +35,6 @@ public class UserController {
         return userService.getUser(id);
     }
 
-    @GetMapping("/departments")
-    public List<User> fetchDepartmentList() {
-        return userService.fetchUserList();
-    }
-
     @PutMapping("/user/{id}")
     public User updateUser(@PathVariable("id") Long id, @RequestBody User user) throws UserNotFoundException {
         return userService.updateUser(id,user);

@@ -14,7 +14,6 @@ public interface UserService {
 
     void deleteUserById(Long id) throws UserNotFoundException;
 
-    List<User> fetchUserList();
 
     User fetchUserByEmail(String email) throws UserNotFoundException;
 

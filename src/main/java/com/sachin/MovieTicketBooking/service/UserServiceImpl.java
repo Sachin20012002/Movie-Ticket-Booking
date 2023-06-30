@@ -59,10 +59,6 @@ public class UserServiceImpl implements UserService{
         userRepository.deleteById(userId);
     }
 
-    @Override
-    public List<User> fetchUserList() {
-        return userRepository.findAll();
-    }
 
     @Override
     public User fetchUserByEmail(String email) throws UserNotFoundException {
